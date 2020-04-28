@@ -1,0 +1,52 @@
+.root {
+    -first-color: #931680;
+    -second-color: #BF2C79;
+    -third-color: #E8406C;
+    -fourth-color: #EF816A;
+    -fifth-color: #F8B24D;
+
+    -text-color: derive(white, -60%);
+    -text-secondary-color: derive(white, -40%);
+
+}
+
+.label {
+    -fx-text-fill: -text-color;
+}
+
+.label-secondary {
+    -fx-text-fill: -text-secondary-color;
+}
+
+.button {
+    -fx-background-color: -second-color;
+    -fx-text-fill: WHITE;
+    -fx-font-weight: BOLD;
+    -fx-font-size: 14;
+}
+
+.button: hover {
+    -fx-background-color: derive(-second-color, +10%);
+    -fx-text-fill: WHITE;
+    -fx-font-weight: BOLD;
+}
+
+.button: armed {
+    -fx-background-color: derive(-second-color, +20%);
+    -fx-text-fill: WHITE;
+    -fx-font-weight: BOLD;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-prompt-text-fill: -text-secondary-color;
+}
+
+.text-area {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.text-area .content {
+    -fx-background-color: white;
+}

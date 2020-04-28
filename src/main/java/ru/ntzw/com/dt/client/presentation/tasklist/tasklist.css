@@ -1,0 +1,59 @@
+.root {
+    -primary-color: #931680;
+    -text-on-primary-color: #EEEEEE;
+    //-fx-background-color: derive(-primary-color, +20%);
+}
+
+.header {
+    -fx-alignment: CENTER_RIGHT;
+    -fx-padding: 10;
+    -fx-background-color: -primary-color;
+}
+
+.header .label {
+    -fx-text-fill: -text-on-primary-color;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+}
+
+.exit-button {
+    -fx-background-color: TRANSPARENT;
+}
+
+.exit-button:hover {
+    -fx-background-color: #FFFFFF11;
+}
+
+.exit-button .glyph-icon {
+    -glyph-size: 16;
+    -fx-fill: -text-on-primary-color;
+}
+
+.scroll-pane,
+.scroll-pane .viewport {
+    -fx-background-color: TRANSPARENT;
+}
+
+.scroll-pane .scroll-bar,
+.scroll-pane .scroll-bar .decrement-arrow,
+.scroll-pane .scroll-bar .increment-arrow,
+.scroll-pane .scroll-bar .track {
+    -fx-padding: 0;
+    -fx-background-color: TRANSPARENT;
+}
+
+.scroll-pane .scroll-bar {
+
+}
+
+.scroll-pane .scroll-bar .thumb {
+    -fx-background-insets: 0;
+    -fx-min-width: 5;
+    -fx-background-color: derive(-primary-color, +50%);
+}
+
+.container {
+    //-fx-padding: 10;
+    //-fx-spacing: 10;
+}
+

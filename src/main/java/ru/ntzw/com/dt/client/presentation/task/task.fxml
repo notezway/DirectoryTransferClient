@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox styleClass="task" xmlns="http://javafx.com/javafx/8.0.221" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.ntzw.com.dt.client.presentation.task.TaskPresenter">
+   <children>
+      <HBox fx:id="iconHitBox" alignment="CENTER" maxHeight="48.0" maxWidth="48.0" minHeight="48.0" minWidth="48.0" onMouseEntered="#onIconEntered" onMouseExited="#onIconExited" styleClass="glyph-hitbox" HBox.hgrow="NEVER">
+         <children>
+            <FontAwesomeIconView fx:id="iconView" glyphName="CLOCK_ALT" onMouseClicked="#onIconClicked" />
+         </children>
+      </HBox>
+      <VBox styleClass="content" HBox.hgrow="ALWAYS">
+         <children>
+            <Label fx:id="fullnameLabel" styleClass="title" text="Иван Иванович" />
+            <Label fx:id="emailsLabel" minHeight="-Infinity" styleClass="details" text="&#10;" />
+            <Label fx:id="statusLabel" styleClass="details" text="ГОТОВО" />
+            <ProgressBar fx:id="progressBar" prefWidth="999.0" progress="0.57" />
+         </children>
+      </VBox>
+   </children>
+</HBox>

@@ -1,0 +1,43 @@
+.root,
+.task {
+    -faint-color: derive(WHITE, -10%);
+    -accent-color: #EF816A;
+}
+
+.task {
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: -faint-color;
+    -fx-padding: 15;
+    -fx-spacing: 10;
+    -fx-alignment: TOP_LEFT;
+}
+
+.task .glyph-icon {
+    -fx-fill: -accent-color;
+    -glyph-size: 42;
+}
+
+.content {
+    -fx-spacing: 5;
+}
+
+.details {
+    -fx-text-fill: derive(WHITE, -50%);
+}
+
+.title {
+    -fx-font-size: 18;
+    -fx-text-fill: derive(WHITE, -70%);
+}
+
+.progress-bar,
+.progress-bar .track {
+    -fx-background-color: derive(WHITE, -5%);
+    -fx-background-insets: 0;
+}
+
+.progress-bar .bar {
+    -fx-background-color: -accent-color;
+    -fx-background-insets: 0;
+    -fx-padding: 2;
+}
